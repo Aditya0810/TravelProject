@@ -1,0 +1,65 @@
+<!--1.use of slogans, catching phrases, simple and good looking/ pleasant to the eyes,
+home page big background image with opacity.. a phrase in the centre with a link directing to the rest of the website
+-opace and light looking nav bar can be on the  top right,on the sides 8=]   --><!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Travel</title>
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+    <script type="text/javascript">
+    var i = 0;
+    var images = [];
+    var time = 4000;
+
+    images[0] = 'images/fiji.jpg';
+    images[1] = 'images/tree.jpg';
+    images[2] = 'images/city.jpg';
+    images[3] = 'images/liberty.jpg';
+    images[4] = 'images/taj.jpg';
+    images[5] = 'images/frst.jpg';
+
+    function changeImg () {
+      document.slide.src = images[i];
+
+      if(i<images.length - 1){
+        i++;
+      }
+      else {
+        i=0;
+      }
+
+      setTimeout("changeImg()" , time);
+
+    }
+
+    </script>
+  </head>
+  <body onload="changeImg();">
+    <header id="header">
+    <p id="clock"></p>
+    <nav id="nav_bar">
+        <a href="travelester.html" id="heading">iTravel</a>
+        <li><a href="youtube.com" id="link1">Travel with us</a>
+          <li><a href="youtube.com" id="link2">Suggestions</a>
+              <li><a href="youtube.com" id="link4">Become a Member</a>
+
+
+    </nav>
+
+    </header>
+    <hr id="hr">
+    <div id="bg">
+      <section id="sec_2">
+
+
+
+        <h3 align="center" id="slogan_1">Explore the World<br> like Never before</h3>
+        <img name="slide" height="610px" width="1354px" id="bg_img">
+      </section>
+      </div>
+      <hr style="height:6px;background-color:#66FCF1;">
+      <div
+
+  </body>
+</html>
